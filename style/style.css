@@ -1,0 +1,123 @@
+body{
+    background-color: fuchsia;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+/* container */
+.container{
+    display: flex;
+    background-color: whitesmoke;
+    justify-content: flex-end;
+    padding: 5px;
+    width: 100%;
+    box-shadow: 0 50px 8px rgba(-0, 0, 0, 0.1)
+}
+/* menu */
+.menu{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+.menu li{
+    padding: 10px;
+    position: relative;
+}
+.menu li a{
+    text-decoration: none;
+    font-size: 20px;
+}
+.menu li a:hover{
+    background-color: rgb(219, 188, 34);
+    width: 100%;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+}
+/* logo */
+.logo{
+    margin-right: auto;
+}
+.logo img{
+    width: 100px;
+    height: 90px;
+    border-radius: 20px;
+}
+.submenu{
+    top: 100%;
+    left: 0;
+    background-color: rgb(240, 244, 247);
+    list-style: none;
+    box-shadow: 0 50px 8px rgba(-0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 200px;
+    display: none;
+    position: absolute;
+}
+.menu li:hover .submenu{
+    display: block;
+}
+/* banner */
+.banner img{
+    width: 101%;
+    margin-top: 10px;
+}
+/* categories */
+.categories{
+    display: flex;
+    width: 100%;
+    gap: 25px;
+    align-items: center;
+}
+.categories .card{
+    width: 160px;
+    height: 160px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(-0, 0, 0, 0.1);
+    gap: 25px;
+    border-radius: 10px;
+}
+.categories .card img{
+    width: 100px;
+    height: 100px;
+    margin-left: 25px;
+}
+.categories .card p{
+    text-align: center;
+}
+/* product */
+.product{
+    display: flex;
+    gap: 10px;
+}
+.product .card{
+    width: 300px;
+    background-color: aliceblue;
+    box-shadow: 0px 0px 5px 0px black;
+    border-radius: 10px;
+}
+.card img{
+    width: 200px;
+    border-radius: 10px;
+    margin-left: 20%;
+}
+.card h1{
+    text-align: center;
+}
+.card h2{
+    text-align: center;
+    color: brown;
+}
+.card h3{
+    text-align: center;
+}
+.card .li{
+    color: greenyellow;
+}
+button{
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: chocolate;
+    color: aliceblue;
+    border: none;
+}
